@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,77 +14,208 @@
       href="assets/favicon-32x32.png"
       type="image/x-icon"
     />
-    <title>News|| Page</title>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               grayishBlue: "hsl(233, 8%, 79%)",
-              softRed: "hsl(5, 85%, 63%)",
-              softOrange: "hsl(35, 77%, 62%)",
-              offWhite: "hsl(36, 100%, 99%)",
-              darkGrayishBlue: "hsl(236, 13%, 42%)",
-              veryDarkBlue: "hsl(240, 100%, 5%)",
+              softred: "hsl(5, 85%, 63%)",
+              softorange: "hsl(35, 77%, 62%)",
+              offwhite: "hsl(36, 100%, 99%)",
+              DarkgrayishBlue: "hsl(236, 13%, 42%)",
+              VeryDarkBlue: "hsl(240, 100%, 5%)",
             },
             fontFamily: {
-              Inter: ['"inter", serif'],
+              Inter: ['"Inter", serif;'],
             },
           },
         },
       };
     </script>
+    <title>News || page</title>
   </head>
   <body class="font-Inter">
+    <!-- Nav -->
     <nav
       class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px] flex justify-between items-center"
     >
+      <!-- Nav logo -->
       <div>
-        <img src="assets/logo.svg" alt="nav-logo" />
+        <img src="assets/logo.svg
+        " alt="nav-logo" />
       </div>
       <!-- nav items -->
-      <ul class="hidden md:flex gap-12 font-[400] text-darkGrayishBlue">
-        <li class="hover:text-softRed cursor-pointer">Home</li>
-        <li class="hover:text-softRed cursor-pointer">New</li>
-        <li class="hover:text-softRed cursor-pointer">Popular</li>
-        <li class="hover:text-softRed cursor-pointer">Trending</li>
-        <li class="hover:text-softRed cursor-pointer">Categories</li>
+      <ul class="hidden md:flex gap-12 font-[400] text-DarkgrayishBlue">
+        <li class="hover:text-softred cursor-pointer">Home</li>
+        <li class="hover:text-softred cursor-pointer">New</li>
+        <li class="hover:text-softred cursor-pointer">Popular</li>
+        <li class="hover:text-softred cursor-pointer">Trending</li>
+        <li class="hover:text-softred cursor-pointer">Categories</li>
       </ul>
-      <!-- menu-img/icon -->
+      <!-- menu-img -->
       <div class="md:hidden">
         <img src="assets/icon-menu.svg" alt="menu-icon" />
       </div>
     </nav>
     <!-- main -->
     <main class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px]">
-      <!-- main-section -->
+      <!-- main section -->
       <section class="lg:grid grid-cols-3 gap-12">
         <!-- section-1 -->
         <section class="col-span-2">
           <!-- div-1 -->
           <div>
-            <img src="assets/image-web-3-desktop.jpg" alt="image-web-3-desktop" class="hidden md:block">
-            <img src="assets/image-web-3-mobile.jpg" alt="image-web-3-mobile" class="md:hidden">
+            <img
+              src="assets/image-web-3-desktop.jpg"
+              alt="image-web-3-desktop"
+              class="hidden md:block"
+            />
+            <img
+              src="assets/image-web-3-mobile.jpg"
+              alt="image-web-3-mobile"
+              class="md:hidden"
+            />
           </div>
           <!-- div-2 -->
           <div class="lg:grid grid-cols-2">
-            <h1 class="font-[800] text-[36px] md:text-[50px]">The Bright Future of Web 3.0?</h1>
+            <h1
+              class="mt-[2rem] font-[800] text-[45px] md:text-[50px] lg:text-[55px]"
+            >
+              The Bright Future Of Web 3.0?
+            </h1>
             <div>
-                <p>
-                    We dive into the next evolution of web that claims to put the
-                    power of the platforms back into the hands of the people. But is
-                    it really fulfilling its promise?
-                  </p>
-                  <button>READ MORE</button>
+              <p
+                class="text-[15px] mt-2 text-DarkgrayishBlue font-400 lg:mt-[2rem] lg:text-[16px]"
+              >
+                We dive into the next evolution of web that claims to put the
+                power of the platforms back into the hands of the people. But is
+                it really fulfilling its promise?
+              </p>
+              <div>
+                <button
+                  class="text-[15px] bg-softred w-[55%] mt-8 mb-12 py-4 font[-400] font-bold text-center hover:bg-VeryDarkBlue hover:text-offwhite cursor-pointer lg:mt-[3rem] lg:w-[60%]"
+                >
+                  READ MORE
+                </button>
+              </div>
             </div>
           </div>
         </section>
         <!-- section-2 -->
-        <section class="bg-veryDarkBlue text-offWhite p-4">
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, consectetur iste? Dolorum ex consectetur doloremque provident nobis enim fugiat magni nulla in. Assumenda ullam facere, alias aliquam sint facilis quis laborum dicta aperiam sed obcaecati nostrum odio dolores nemo adipisci illum totam officiis praesentium in expedita exercitationem nesciunt qui velit reprehenderit? Laudantium, aut assumenda. Deleniti consequuntur error eligendi cumque hic ipsam aliquid dolore tempora soluta ipsa perspiciatis, aspernatur aliquam delectus ut temporibus! Tempore deleniti eligendi illo laborum harum impedit necessitatibus voluptas in ipsam voluptatibus hic iure, dolore repellat cum similique ducimus ipsum eaque quis corporis autem? Aliquam maiores consequuntur adipisci.</P>
+        <section class="container bg-VeryDarkBlue p-4 mb-[4rem]">
+          <!-- div-1 -->
+          <div>
+            <h1 class="text-softorange text-[30px] font-[700] my-2">New</h1>
+          </div>
+          <!-- div-2 -->
+          <div class="text-offwhite pb-4">
+            <h1
+              class="pb-2 text-xl font-bold font-800 lg:hover:text-softorange cursor-pointer lg:text-[18px]"
+            >
+              Hydrogen VS Electric Cars
+            </h1>
+            <p class="border-b-2 pb-8 text-DarkgrayishBlue">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <!-- div-3 -->
+          <div class="text-offwhite pb-4">
+            <h1
+              class="pb-2 text-xl font-bold font-800 lg:hover:text-softorange cursor-pointer lg:whitespace-nowrap lg:text-[18px]"
+            >
+              The Downsides of AI Artistry
+            </h1>
+            <p class="border-b-2 pb-8 text-DarkgrayishBlue">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <!-- div-4 -->
+          <div class="text-offwhite pb-4">
+            <h1
+              class="pb-2 text-xl font-bold font-800 lg:hover:text-softorange cursor-pointer lg:text-[18px]"
+            >
+              Is VC Funding Drying Up?
+            </h1>
+            <p class="text-DarkgrayishBlue">
+              Private Funding by VC is down 50% YOY. We take a look at what that
+              means.
+            </p>
+          </div>
         </section>
       </section>
+      <!---footer -->
+      <footer
+        class="container mt-[4rem] mb-[6rem] lg:grid grid-cols-3 lg:mt-2 lg:mb-4"
+      >
+        <!-- section-1-footer -->
+        <section>
+          <div class="flex gap-6 mb-[4rem] lg:mr-[2rem]">
+            <img
+              class="h-[8rem]"
+              src="assets/image-retro-pcs.jpg"
+              alt="image-retro-pcs"
+            />
+            <div>
+              <h1 class="text-softred text-[30px] font-800 font-bold">01</h1>
+              <h3
+                class="font-bold font-800 text-VeryDarkBlue text-[18px] whitespace-nowrap lg:hover:text-softred cursor-pointer"
+              >
+                Reviving Retro PCs
+              </h3>
+              <p
+                class="text-[14px] mt-2 leading-[1.6] text-DarkgrayishBlue lg:text-[12px]"
+              >
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- section-2-footer -->
+        <section>
+          <div class="flex gap-6 mb-[4rem]">
+            <img class="h-[8rem]" src="assets/image-top-laptops.jpg" alt="image-top-laptops">
+            <div>
+              <h1 class="text-softred text-[30px] font-800 font-bold">02</h1>
+              <h3
+                class="font-bold font-800 text-VeryDarkBlue text-[18px] whitespace-nowrap lg:hover:text-softred cursor-pointer"
+              >
+                Top 10 Laptops of 2022
+              </h3>
+              <p
+                class="text-[14px] mt-2 leading-[1.6] text-DarkgrayishBlue lg:text-[12px]"
+              >
+                Our best picks for various needs and budget.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- section-3-footer -->
+        <section>
+          <div class="flex gap-6 md:ml-[2rem]">
+            <img
+              class="h-[8rem]"
+              src="assets/image-gaming-growth.jpg"
+              alt="gaming-growth-image"
+            />
+            <div>
+              <h1 class="text-softred text-[30px] font-800 font-bold">03</h1>
+              <h3
+                class="font-bold font-800 text-VeryDarkBlue text-[18px] whitespace-nowrap lg:hover:text-softred cursor-pointer"
+              >
+                The Growth of Gaming
+              </h3>
+              <p
+                class="text-[14px] mt-2 leading-[1.6] text-DarkgrayishBlue lg:text-[12px]"
+              >
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </section>
+      </footer>
     </main>
   </body>
 </html>
